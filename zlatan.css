@@ -2,14 +2,15 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background: #ccc;
+    background: white;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 60px auto auto 250px;
+    grid-template-rows: 60px auto auto auto 250px;
     grid-template-areas: 
     "nav nav"
     "main main"
-    "section section"
+    "content content"
+    "aside section"
     "footer footer";
 }
 
@@ -23,17 +24,44 @@ main {
     grid-area: main;
 }
 
-section {
-    grid-area: section;
+content {
+    grid-area: content;
+    text-align: center;
+    height: 150px;
+    padding-top: 75px;
+    padding-left: 250px;
+    padding-right: 250px;
 }
 
-.section1 {
-    text-align: center;
-    height: 200px;
+aside {
+    grid-area: aside;
+    margin-right: 20px;
+    margin-top: 100px;
+    margin-bottom: auto;
+    width: 570px;
+    padding-left: 50px;
+}
+
+section {
+    grid-area: section;
+    margin-right: 20px;
+    margin-top: 100px;
+    margin-bottom: auto;
+    width: 570px;
+    padding-left: 50px;
+}
+
+footer {
+    grid-area: footer;
+    margin-top: 100px;
+    padding-top: 40px;
+    padding-left: 250px;
+    padding-right: 250px;
+    background: yellow;
 }
 
 .nav {
-    background: rgb(88, 88, 88);
+    background: white;
     padding: 0;
     margin: 0;
     text-align: center;
@@ -60,15 +88,15 @@ section {
 }
 
 .nav a:link {
-    color: yellow;
+    color: black;
 }
 
 .nav a:visited {
-    color: yellow;
+    color: black;
 }
 
 .nav a:focus {
-    color: yellow;
+    color: black;
 }
 
 .nav a:hover {
@@ -76,14 +104,102 @@ section {
 }
 
 .nav a:active {
-    color: yellow;
+    color: black;
+}
+
+.secondnav {
+    background: black;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    margin-top: -4px;
+}
+
+.secondnav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.secondnav li {
+    display: inline-block;
+}
+
+.secondnav a {
+    text-decoration: none;
+    color: #fff;
+    width: 100px;
+    display: block;
+    padding: 22px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.secondnav a:link {
+    color: white;
+}
+
+.secondnav a:visited {
+    color: white;
+}
+
+.secondnav a:focus {
+    color: white;
+}
+
+.secondnav a:hover {
+    background-color: orange;
+}
+
+.secondnav a:active {
+    color: white;
 }
 
 .cover {
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
     object-fit: cover;
     width: 100%;
     height: 500px;
+}
+
+.bild {
+    object-fit: cover;
+    width: 100%;
+    height: 500px;
+}
+
+.klubbtext {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    margin-bottom: 100px;
+}
+
+.center {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.titlarh2 {
+    margin-bottom: 200px;
 }
