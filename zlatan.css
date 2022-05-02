@@ -18,16 +18,19 @@ body {
     max-height: 100vh;
 }
 
+/* Ger nav platsen nav i griden och stylear den */
 nav {
     grid-area: nav;
     margin-left: 0;
     margin-right: 0;
 }
 
+/* Ger main platsen main i griden */
 main {
     grid-area: main;
 }
 
+/* Ger content platsen content i griden och stylear den */
 content {
     grid-area: content;
     text-align: center;
@@ -37,15 +40,15 @@ content {
     padding-right: 250px;
 }
 
+/* Ger aside platsen aside i griden och stylear den */
 aside {
     grid-area: aside;
-    margin-right: 20px;
     margin-top: 100px;
     margin-bottom: auto;
     width: 33%;
-    padding-left: 50px;
 }
 
+/* Ger section platsen section i griden och stylear den */
 section {
     grid-area: section;
     margin-top: 100px;
@@ -55,15 +58,15 @@ section {
     margin-right: auto;
 }
 
+/* Ger summary platsen summary i griden och stylear den */
 summary {
     grid-area: summary;
-    margin-right: 50px;
     margin-top: 100px;
     margin-bottom: auto;
     width: 33%;
-    padding-left: 20px;
 }
 
+/* Ger footer platsen footer i griden och stylear den */
 footer {
     grid-area: footer;
     margin-top: 100px;
@@ -73,6 +76,7 @@ footer {
     background: orange;
 }
 
+/* Stylear nav */
 .nav {
     background: white;
     padding: 0;
@@ -80,14 +84,17 @@ footer {
     text-align: center;
 }
 
+/* Stylear barnselektorn ul i nav-klassen */
 .nav ul {
     display: inline-block;
 }
 
+/* Stylear barnselektorn li i nav-klassen */
 .nav li {
     display: inline-block;
 }
 
+/* Stylear barnselektorn a i nav-klassen */
 .nav a {
     text-decoration: none;
     color: #fff;
@@ -99,26 +106,32 @@ footer {
     text-align: center;
 }
 
+/* Stylear barnselektorn a i nav-klassen enligt LoVe Focus HAte */
 .nav a:link {
     color: black;
 }
 
+/* Stylear barnselektorn a i nav-klassen enligt LoVe Focus HAte */
 .nav a:visited {
     color: black;
 }
 
+/* Stylear barnselektorn a i nav-klassen enligt LoVe Focus HAte */
 .nav a:focus {
     color: black;
 }
 
+/* Stylear barnselektorn a i nav-klassen enligt LoVe Focus HAte */
 .nav a:hover {
     background-color: orange;
 }
 
+/* Stylear barnselektorn a i nav-klassen enligt LoVe Focus HAte */
 .nav a:active {
     color: black;
 }
 
+/* Stylear secondnav (lokal many) */
 .secondnav {
     background: black;
     padding: 0;
@@ -128,14 +141,17 @@ footer {
     width: 100%;
 }
 
+/* Stylear barnselektorn ul i secondnav-klassen */
 .secondnav ul {
     display: inline-block;
 }
 
+/* Stylear barnselektorn li i secondnav-klassen */
 .secondnav li {
     display: inline-block;
 }
 
+/* Stylear barnselektorn a i secondnav-klassen */
 .secondnav a {
     text-decoration: none;
     color: #fff;
@@ -147,41 +163,48 @@ footer {
     text-align: center;
 }
 
+/* Stylear barnselektorn a i secondnav-klassen enligt LoVe Focus HAte */
 .secondnav a:link {
     color: white;
 }
 
+/* Stylear barnselektorn a i secondnav-klassen enligt LoVe Focus HAte */
 .secondnav a:visited {
     color: white;
 }
 
+/* Stylear barnselektorn a i secondnav-klassen enligt LoVe Focus HAte */
 .secondnav a:focus {
     color: white;
 }
 
+/* Stylear barnselektorn a i secondnav-klassen enligt LoVe Focus HAte */
 .secondnav a:hover {
     background-color: orange;
 }
 
+/* Stylear barnselektorn a i secondnav-klassen enligt LoVe Focus HAte */
 .secondnav a:active {
     color: white;
 }
 
+/* Stylear klassen cover, används för omslagsbilden på många sidor */
 .cover {
     object-fit: cover;
     width: 100%;
     height: 400px;
 }
 
+/* a */
 .bild {
     object-fit: cover;
-    width: 400%;
+    width: 300%;
     height: 400px;
 }
 
 .förstasidabild {
     object-fit: cover;
-    width: 400%;
+    width: 300%;
     height: 400px;
 }
 
@@ -227,11 +250,12 @@ footer {
 }
 
 .centerindex {
-    margin-top: 50%;
     text-align: center;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
     width: 100%;
 }
 
@@ -253,9 +277,17 @@ tr:nth-child(even) {
 
 .infobox {
     background-color: orange;
+    color: black;
     width: 80%;
     padding-top: 4%;
     padding-bottom: 4%;
+    padding-left: 4%;
+    display: block;
+}
+
+#infoboxlist {
+    list-style-type: none;
+    line-height: 25px;
 }
 
 .karriär {
@@ -263,13 +295,12 @@ tr:nth-child(even) {
 }
 
 .button {
-    background-color: orange;
+    background-color: black;
     border: none;
     color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    font-weight: bold;
 }
 
 .bakgroundtext {
@@ -289,13 +320,76 @@ tr:nth-child(even) {
     margin-right: auto;
 }
 
-.youtube { 
+#indextext {
     width: 100%;
-    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-@media screen and (max-width:500px){
-    .body {
-        min-height: 100vh;
+/* Style för youtubevideon */
+#youtube { 
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: auto;
+}
+
+/* Style textområden i formuläret */
+input[type=text] {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 14px;
+    margin-top: 8px;
+    margin-bottom: 18;
+    resize: vertical;
+}
+
+/* Style submitknappen */
+input[type=submit] {
+    background-color: black;
+    color: white;
+    padding: 14px 24px;
+    border-radius: 4px;
+    border: none;
+    margin-top: 8px;
+    float: right;
+}
+
+/* Style submitknappen vid hover */
+input[type=submit]:hover {
+    background-color: orange;
+}
+
+/* Style för sidan om max-width:780px */
+@media screen and (max-width:780px){
+    body {
+        grid-template-columns: 1fr;
+        grid-template-rows: 60px auto auto auto auto auto 250px;
+        grid-template-areas: 
+        "nav"
+        "main"
+        "content"
+        "aside"
+        "section" 
+        "summary"
+        "footer";
+    }
+    
+    #indextext {
+        margin-bottom: 3%;
+        padding-left: 5em;
+        padding-right: 5em;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .centerindex {
+        margin-top: 15%;
+        padding-left: 5em;
+        padding-right: 5em;
+        margin-right: auto;
+        margin-left: auto;
     }
 }
