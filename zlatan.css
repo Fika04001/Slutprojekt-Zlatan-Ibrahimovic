@@ -1,9 +1,3 @@
-* { 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 @font-face {
     font-family: "Familjen Grotesk";
     font-style: normal;
@@ -22,6 +16,8 @@ body {
     "footer footer footer";
     font-family: familjen grotesk;
     max-height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 /* Ger nav platsen nav i griden och stylear den */
@@ -44,6 +40,7 @@ article {
     padding-top: 75px;
     padding-left: 250px;
     padding-right: 250px;
+    box-sizing: border-box;
 }
 
 /* Ger aside platsen aside i griden och stylear den */
@@ -52,6 +49,7 @@ aside {
     margin-top: 100px;
     margin-bottom: auto;
     width: 33%;
+    box-sizing: border-box;
 }
 
 /* Ger section platsen section i griden och stylear den */
@@ -216,14 +214,14 @@ footer {
 
 .förstasidabild {
     object-fit: cover;
-    width: 300%;
+    width: 250%;
     height: 400px;
 }
 
 .förstasidabildomvänd {
     transform: scaleX(-1);
     object-fit: cover;
-    width: 300%;
+    width: 250%;
     height: 400px;
 }
 
@@ -308,13 +306,14 @@ tr:nth-child(even) {
     width: 80%;
     padding-top: 4%;
     padding-bottom: 4%;
-    padding-left: 4%;
+    padding-left: 8%;
     display: block;
 }
 
 #infoboxlist {
     list-style-type: none;
     line-height: 25px;
+    padding-left: 0%;
 }
 
 .karriär {
@@ -466,16 +465,15 @@ input[type=submit]:hover {
 
     .förstasidabild {
         object-fit: cover;
-        width: 310%;
+        width: 80%;
         height: 400px;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 20%;
     }
     
     .förstasidabildomvänd {
         transform: scaleX(-1);
         object-fit: cover;
-        width: 310%;
+        width: 100%;
         height: 400px;
     }
 
