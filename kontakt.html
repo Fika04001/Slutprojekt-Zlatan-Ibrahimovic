@@ -15,13 +15,34 @@
                 <li><a href="kontakt.html">Kontakt</a></li>
             </ul>
         </nav>
+        <header>
+            <img class="cover" src="https://lyko.com/globalassets/magazine/2018-05/zlatan-sport/banner-magazine.jpg?ref=528488" alt="Bild av Zlatan Ibrahimovic">
+        </header>
         <main class="kontakt">
             <h3 class="kontaktcenter">Kontaktformulär</h3>
             <br>
             <form class="kontaktcenter" action="action_page.php">
+                <label class="radio"> Privatperson
+                    <input type="radio" name="radio">
+                    <span class="check"></span>
+                </label>
+                <label class="radio"> Företag
+                    <input type="radio" name="radio">
+                    <span class="check"></span>
+                </label>
+                <br>
+                <label class="checkbox"> Ett
+                    <input type="checkbox">
+                    <span class="check"></span>
+                </label>
+                <label class="checkbox"> Två
+                    <input type="checkbox">
+                    <span class="check"></span>
+                </label>
                 <input type="text" name="förnamn" placeholder="Förnamn">
                 <input type="text" name="efternamn" placeholder="Efternamn">
-                <input type="text" name="meddelande" placeholder="Meddelande">
+                <textarea rows="5" cols="25" name="meddelande" placeholder="Meddelande"></textarea>
+                <input type="password" name="lösenord" placeholder="Lösenord">
                 <button type="submit">Skicka</button>
             </form>
         </main>
