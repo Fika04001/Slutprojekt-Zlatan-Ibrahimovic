@@ -8,7 +8,7 @@
     </head>
     <body>
         <nav>
-            <ul class="nav">
+            <ul id="nav">
                 <li><a href="index.html">Hem</a></li>
                 <li><a href="karriär.html">Karriär</a></li>
                 <li><a href="projekt.html">Projekt</a></li>
@@ -19,34 +19,40 @@
             <img class="cover" src="https://lyko.com/globalassets/magazine/2018-05/zlatan-sport/banner-magazine.jpg?ref=528488" alt="Bild av Zlatan Ibrahimovic">
         </header>
         <main class="kontakt">
-            <h3 class="kontaktcenter">Kontaktformulär</h3>
-            <br>
-            <form class="kontaktcenter" action="action_page.php">
-                <label class="radio"> Privatperson
-                    <input type="radio" name="radio">
-                    <span class="check"></span>
-                </label>
-                <label class="radio"> Företag
-                    <input type="radio" name="radio">
-                    <span class="check"></span>
-                </label>
-                <br>
-                <label class="checkbox"> Ett
-                    <input type="checkbox">
-                    <span class="check"></span>
-                </label>
-                <label class="checkbox"> Två
-                    <input type="checkbox">
-                    <span class="check"></span>
-                </label>
-                <input type="text" name="förnamn" placeholder="Förnamn">
-                <input type="text" name="efternamn" placeholder="Efternamn">
-                <textarea rows="5" cols="25" name="meddelande" placeholder="Meddelande"></textarea>
-                <input type="password" name="lösenord" placeholder="Lösenord">
-                <button type="submit">Skicka</button>
+            <h1 class="kontaktcenter">Kontaktformulär</h1>
+            <form method="post" action="kontaktpost.html">
+                <fieldset>
+                    <legend>Din information:</legend>
+                        <label for="namn">Namn:</label>
+                        <input type="text" id="namn" name="namn" placeholder="ditt namn">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="din email">
+                        <label for="telefon">Telefon:</label>
+                        <input type="tel" id="telefon" name="telefon" placeholder="ditt telefonnummer">
+                        <label for="password">Lösenord:</label>
+                        <input type="password" id="lösenord" name="lösenord">
+                        <label for="kön">Kön:</label>
+                        <input type="radio" name="kön" value="man">Man
+                        <input type="radio" name="kön" value="kvinna">Kvinna
+                        <input type="radio" name="kön" value="annan">Annan<br>
+                        <label for="språk">Språk</label>
+                        <select name="språk" id="språk">
+                            <option value="">välj språk</option>
+                            <option value="svenska">Svenska</option>
+                            <option value="engelska">Engelska</option>
+                            <option value="franska">Franska</option>
+                        </select>
+                        <label for="meddelande">Meddelande:</label>
+                        <textarea name="meddelande" id="meddelande" placeholder="skriv ditt meddelande"></textarea>
+                        <label for="intresse">Vad intresserar dig med Zlatan?</label>
+                        <input type="checkbox" name="intresse" value="spelstil">Spelstil
+                        <input type="checkbox" name="intresse" value="personlighet">personlighet
+                        <input type="checkbox" name="intresse" value="karriär">Karriär
+                        <button type="submit">Skicka</button>
+                </fieldset>
             </form>
         </main>
-        <footer class="footer">
+        <footer id="footer">
             <p>Lorem, ipsum dolor</p>
         </footer>
     </body>
