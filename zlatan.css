@@ -359,7 +359,7 @@ tr:nth-child(even) {
 form {
     margin: 50px auto;
     padding: 16px;
-    max-width: 700px;
+    max-width: 430px;
     border: 1px solid rgb(200, 200, 200);
 }
 
@@ -442,6 +442,15 @@ label.light {
 .kontaktcenter {
     text-align: center;
 }
+
+#kontaktpost {
+    text-align: center;
+}
+
+#video {
+    padding-bottom: 50%;
+}
+    
 
 
 /* Style för sidan om max-width:780px */
